@@ -1,31 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
-import Home from "./Pages/Home"
-import Home from "./Pages/Enfermedad"
-import Home from "./Pages/MyAccount"
-import Home from "./Pages/Sign in"
-import { useRoutes } from 'react-router-dom'
+import Begining from "./Pages/Begining"
+import Enfermedad from "./Pages/Enfermedad"
+import MyAccount from "./Pages/MyAccount"
+import Signin from "./Pages/Signin"
+import { BrowserRouter, useRoutes } from 'react-router-dom'
+
 
 const AppRoutes = () => {
   let routes = useRoutes ([
-    {path: "/Home", element: <Home/>},
+    {path: "/", element: <Begining/>},
+    {path: "/Begining", element: <Begining/>},
     {path: "/Enfermedad", element: <Enfermedad/>},
     {path: "/MyAccount", element: <MyAccount/>},
-    {path: "/Sign in", element: <Sign in/>},
-
-
-
+    {path: "/Signin", element: <Signin/>},
 
   ])
+  return routes
 }
-
-function App() {
-  const [count, setCount] = useState(0)
-  return (
-    <>
-   ,<div>
+<div>
     <ul className='sections'>
       <li>Inicio</li>
       <li>Enfermedades</li>
@@ -39,8 +32,13 @@ function App() {
     </p>
     </div>
   </div>
+
+const App = () => {
+  return ( 
     
-    </>
+    <BrowserRouter>
+      <AppRoutes/>
+    </BrowserRouter>
   )
 }
 
