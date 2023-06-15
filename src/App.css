@@ -1,0 +1,25 @@
+.sections{
+  background-color: rgba(190, 198, 224, 0.61);
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  list-style: none;
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.inicio-container{
+  padding-left: 10%;
+}
+.Descripcion-Inicio{
+  background-color: rgb(190, 198, 224);
+color:white ;
+font-size: medium;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+display: flex;
+width: 40%;
+text-align: center;
+box-shadow: inset;
+}
